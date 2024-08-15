@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	a {
+		@apply inline-block border border-black px-6 py-1 font-semibold !no-underline;
+		@apply disabled:border-gray-400 disabled:bg-gray-400 disabled:text-white;
+	}
+
+	button {
+		@apply border border-black px-6 py-1 font-semibold;
+		@apply disabled:border-gray-400 disabled:bg-gray-400 disabled:text-white;
+	}
+}
